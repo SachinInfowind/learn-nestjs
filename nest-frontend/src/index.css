@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding  :0;
+    box-sizing: border-box;
+}
+.chat-message-wrapper{
+    display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.incoming{
+    background-color: rgb(236, 255, 220);
+    align-items: flex-end;
+    padding: 5px 14px 5px 5px;
+    border-radius: 10px; 
+}
+.outgoing{
+    background-color: rgb(211, 211, 211);
+    align-items: flex-start;
+    padding: 0px 14px 0px 5px;
+    border-radius: 10px;  
+}
