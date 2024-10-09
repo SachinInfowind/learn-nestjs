@@ -1,50 +1,44 @@
-# React + TypeScript + Vite
+# Nest Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+The **Nest Frontend** is a React application that serves as the user interface for the Nest CRUD backend. This application provides users with the ability to perform various operations, such as user signup, signin, profile management, and bulk uploads, all from a single, cohesive platform.
 
-Currently, two official plugins are available:
+## Features
+- **User Authentication:** Secure signup and signin functionality for user accounts.
+- **Profile Management:** Users can create, update, and delete their profiles easily.
+- **Bulk CSV Upload:** Upload user properties in bulk by importing CSV files.
+- **Real-time Chat Integration:** Engage in real-time conversations with others in designated chat rooms.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Frontend:** React
+- **State Management:** Redux
+- **Styling:** Material-UI (MUI)
+- **API Interaction:** Axios for making HTTP requests to the Nest CRUD backend.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
+Make sure you have the following installed:
+- Node.js (version 14 or later)
+- npm (Node Package Manager)
 
-- Configure the top-level `parserOptions` property like this:
+### Installation
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/nest-frontend.git
+   cd nest-frontend
+### Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. **Navigate to the project directory:**
+   After cloning the repository, change to the project directory:
+   ```bash
+   cd nest-frontend
+   
+3. **Install dependencies:**
+   Use npm to install all required packages
+   npm install
+   
+4. **Run the application:**
+   Start the development server
+   npm run dev
+   
